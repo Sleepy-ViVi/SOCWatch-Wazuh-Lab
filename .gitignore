@@ -20,7 +20,7 @@ id_rsa.pub
 
 # Wazuh sensitive credentials
 wazuh-passwords.txt
-
+Wazuh_Manager_Key.txt
 # Windows files
 Thumbs.db
 desktop.ini
