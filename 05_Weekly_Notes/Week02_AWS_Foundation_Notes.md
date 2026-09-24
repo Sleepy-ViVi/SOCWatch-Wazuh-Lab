@@ -68,3 +68,21 @@ Security Group: SOCWatch-Wazuh-SG
 Storage: 30 GiB gp3
 
 The Windows endpoint AMI selection was reviewed before deployment. Microsoft Windows Server 2022 Base (64-bit x86) was selected because it matches the project's Windows Server 2022 requirement. SQL Server and Office-preinstalled AMIs were excluded because those additional applications were unnecessary for the Wazuh SOC monitoring lab.
+
+# EC2 New Wazuh Manager 2
+
+Name: wazuh-manager-2
+Role: Wazuh Manager + Indexer + Dashboard
+OS: Ubuntu 24.04.4 LTS
+Instance Type: c7i-flex.large
+CPU: 2 vCPU
+RAM: 3.7 GiB
+Root Disk: 29 GB
+Private IP: 10.0.1.80
+Public IP: [current public IP]
+VPC: SOCWatch-Wazuh-VPC
+Subnet: SOCWatch-Wazuh-Subnet
+Region: ap-south-1
+Wazuh Version: 4.14.7
+
+Manager instance differs from the original project specification because the deployed AWS instance uses c7i-flex.large rather than the specified t3.medium. The lab proceeds with the available instance configuration.
