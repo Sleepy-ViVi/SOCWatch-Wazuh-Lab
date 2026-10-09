@@ -54,3 +54,53 @@ The manager instance configuration differs from the original project specificati
 ## Week 03 Result
 
 The Wazuh manager, indexer and dashboard were successfully deployed. The central Wazuh services are running and the dashboard is accessible through HTTPS. The environment is ready for agent enrollment in Week 04.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# Week 03 — Wazuh Manager Deployment
+
+## Objective
+
+Deploy the Wazuh all-in-one security monitoring platform on an AWS EC2 instance and verify that its main services are running.
+
+## Environment
+
+* Cloud provider: Amazon Web Services (AWS)
+* Region: Asia Pacific (Mumbai), `ap-south-1`
+* Operating system: Ubuntu Server 24.04.5 LTS
+* Manager private IP: `10.0.1.80`
+* Instance hardware: `c7i-flex.large`
+* CPU: 2 vCPUs
+* Memory: Approximately 3.7 GiB
+* Root storage: Approximately 29 GB
+* Wazuh version: `4.14.7`
+
+## Work Completed
+
+* Deployed the Wazuh all-in-one installation.
+* Installed the Wazuh manager, indexer, dashboard, and Filebeat components.
+* Accessed the Wazuh dashboard through a web browser.
+* Checked the status of the main Wazuh services.
+* Recorded the manager's operating system and system resources.
+
+## Verification
+
+The current system configuration and service states were checked using Linux terminal commands. Dashboard access was checked through a browser.
+
+## Evidence
+
+* `W4D3_3_Wazuh_Dashboard_Login.png`
+* `W4D3_4_Wazuh_Dashboard_Overview_2.png`
+* `W4D3_5.1_Manager_Services_Active.png`
+* `W4D3_5.2_Manager_Services_Active.png`
+
+## Configuration Note
+
+The deployed manager uses `c7i-flex.large`, rather than the originally specified `t3.medium`. This is a documented deviation from the project specification.
+
+## Result
+
+The manager deployment and dashboard access have been verified using current system evidence. Service status is recorded according to the captured verification output.
+
+## Limitations
+
+Screenshots were captured after the installation was completed. Original installation-time screenshots and logs were not retained.

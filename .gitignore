@@ -21,6 +21,8 @@ id_rsa.pub
 # Wazuh sensitive credentials
 wazuh-passwords.txt
 Wazuh_Manager_Key.txt
+EC2 Start and Stop.txt
+
 # Windows files
 Thumbs.db
 desktop.ini
