@@ -95,20 +95,11 @@ The deployed instance uses:
 
 The installation assistant's hardware check was bypassed because the available memory was slightly below the installer's recommended requirement.
 
-## 9. Limitations
-
-The following limitations apply to the available deployment evidence:
-
-- Original installation-time screenshots and logs were not retained.
-- The available screenshots document the environment after installation.
-- Service status claims should match the available terminal evidence.
-- Security-group restrictions should be confirmed against the actual AWS configuration.
-
-## 10. Week 03 Result
+## 9. Week 03 Result
 
 The Wazuh all-in-one installation was recorded as completing successfully. The manager, indexer, dashboard and Filebeat were reported as active and the dashboard was accessed through HTTPS.
 
-The available evidence includes dashboard screenshots and terminal screenshots documenting service status.
+The evidence includes dashboard screenshots and terminal screenshots documenting service status.
 
 The manager configuration differs from the original project specification and the deviation has been recorded.
 

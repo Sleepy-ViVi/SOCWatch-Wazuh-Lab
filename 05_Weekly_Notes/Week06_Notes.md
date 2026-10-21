@@ -88,13 +88,9 @@ The following screenshots were recorded:
 - `W6D1_5_SSH_Failed_Login_Event.png`
 - `W6D1_6_Authentication_Alert_Details.png`
 
-## 6. Troubleshooting
+## 6. Conclusion
 
-No persistent errors or configuration issues were recorded during these tests.
-
-## 7. Conclusion
-
-Week 6 focused on vulnerability detection and authentication-failure monitoring.
+Week 6 focused on vulnerability detection and authentication failure monitoring.
 
 The recorded evidence indicates that Wazuh displayed vulnerability findings for `agent-linux-1` and detected individual failed SSH login attempts under Rule `5710`.
 

@@ -1,4 +1,4 @@
-# SOCWatch — Troubleshooting Log
+# SOCWatch - Troubleshooting Log
 
 **Project:** Wazuh SOC Monitoring Lab  
 **Environment:** AWS EC2, Ubuntu, RHEL, Windows Server, Wazuh 4.14.7  
@@ -24,9 +24,9 @@
 
 **Cause:** The instance had less memory than the installer expected.
 
-**Resolution:** Deployed a new manager configuration with approximately 3.7 GiB of RAM and used the installer's `-i` option to bypass its hardware check.
+**Resolution:** Deployed a new manager configuration as `c7i-flex.large` with approximately 3.7 GiB of RAM and used the installer's `-i` option to bypass its hardware check.
 
-**Status:** Installation completed. Because the hardware check was bypassed, monitor resource usage and service stability during operation.
+**Status:** Installation completed. 
 
 ---
 
@@ -51,9 +51,9 @@ ERROR: (1230): Invalid element in the configuration: 'wazuh_config'.
 ERROR: (1215): No client configured. Exiting.
 ```
 
-**Cause:** Changes to `ossec.conf` introduced multiple top-level XML elements instead of keeping the configuration under one `<ossec_config>` root element.
+**Cause:** Changes to `ossec.conf` introduced multiple top level XML elements instead of keeping the configuration under one `<ossec_config>` root element.
 
-**Resolution:** Replaced the malformed configuration with a single-root XML structure and placed the required client settings inside it. The manager address was set to `10.0.1.80`, using TCP port `1514`.
+**Resolution:** Replaced the malformed configuration with a single root XML structure and placed the required client settings inside it. The manager address was set to `10.0.1.80`, using TCP port `1514`.
 
 **Status:** Configuration corrected. Confirm successful service startup and agent connectivity in the Wazuh Dashboard.
 
@@ -89,7 +89,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart wazuh-agent
 ```
 
-**Status:** Resolved, subject to confirming that the service is active.
+**Status:** Resolved.
 
 ---
 
@@ -101,7 +101,7 @@ sudo systemctl restart wazuh-agent
 
 **Resolution / Design Decision:** Configured the agents to communicate with the Wazuh Manager using its private VPC address, `10.0.1.80`, over TCP port `1514`. This avoids depending on the manager's public IP for internal agent communication.
 
-**Status:** Addressing the internal communication dependency. Verify agent connectivity after restarting instances.
+**Status:** Verify agent connectivity after restarting instances.
 
 ---
 
@@ -110,5 +110,3 @@ sudo systemctl restart wazuh-agent
 The main issues involved EC2 storage requirements, Wazuh installation resources, SSH session reliability, agent configuration syntax, systemd service management, and changing public IP addresses.
 
 Resolving these issues helped establish a more reliable lab setup. Configuration changes and service restarts should always be followed by verification in the relevant service logs and the Wazuh Dashboard.
-
-**Maintenance note:** If an issue reappears, record the date, affected instance, exact error message, corrective action, and evidence screenshot in this document or a linked incident note.

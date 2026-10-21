@@ -166,29 +166,7 @@ The following screenshot filenames were recorded in the original project notes.
 
 ---
 
-## 6. Issues and Troubleshooting
-
-Record any issues encountered during the log ingestion or FIM tests.
-
-| Issue | Investigation | Resolution | Final Status |
-|---|---|---|---|
-| No specific issue recorded in the supplied notes | Not documented | Not documented | Confirm whether troubleshooting occurred |
-
-If no issues occurred, this section can state that no issues were recorded during testing.
-
-If troubleshooting was required, document:
-
-- The symptom or error message.
-- The affected endpoint or service.
-- The checks performed.
-- The corrective action.
-- The verification performed after the correction.
-
-Do not add troubleshooting steps that were not actually performed.
-
----
-
-## 7. Security Considerations
+## 6. Security Considerations
 
 The following considerations apply to the documented tests:
 
@@ -202,7 +180,7 @@ The log ingestion test used a normal administrative command, while the FIM test 
 
 ---
 
-## 8. Week 05 Summary
+## 7. Week 05 Summary
 
 Week 5 focused on validating two important Wazuh monitoring capabilities: log ingestion and File Integrity Monitoring.
 
@@ -218,7 +196,7 @@ The recorded results indicate that modifying `test-file.txt` in the configured t
 
 The event description was `Integrity checksum changed.`, with rule ID `550`.
 
-## 9. Next Steps
+## 8. Next Steps
 
 The next stage of the project should build on the existing log ingestion and FIM tests.
 

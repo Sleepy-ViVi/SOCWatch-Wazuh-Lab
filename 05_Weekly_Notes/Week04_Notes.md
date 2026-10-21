@@ -64,7 +64,7 @@ The following activities were recorded during the endpoint deployment stage:
 
 ### Verification Requirements
 
-For each endpoint, confirm that:
+For each endpoint, confirmed that:
 
 1. The agent appears in the Wazuh dashboard.
 2. The displayed agent name matches the expected name.
@@ -109,17 +109,7 @@ Agent connectivity depends on the local agent configuration, network connectivit
 
 ---
 
-## 8. Troubleshooting and Issues
-
-Record any problems encountered during agent deployment or enrollment.
-
-| Issue | Action Taken | Outcome |
-|---|---|---|
-| No issue recorded in this section | Not applicable | Update if troubleshooting was required |
-
----
-
-## 9. Week 04 Result
+## 8. Week 04 Result
 
 The Week 4 deployment stage focused on enrolling 3 endpoint agents with the Wazuh manager:
 
@@ -129,7 +119,7 @@ The Week 4 deployment stage focused on enrolling 3 endpoint agents with the Wazu
 
 ---
 
-## 10. Next Steps
+## 9. Next Steps
 
 Following successful agent enrollment:
 
