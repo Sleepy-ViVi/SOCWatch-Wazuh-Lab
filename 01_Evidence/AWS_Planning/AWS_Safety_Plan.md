@@ -176,7 +176,7 @@ Relevant project locations include:
 - `03_Report/` - Final project report.
 - `04_Troubleshooting/` - Troubleshooting records.
 - `05_Weekly_Notes/` - Weekly progress documentation.
-- `06_Architecture/` - AWS and Wazuh architecture documentation.
+- `06_Architecture/` - AWS and Wazuh architecture.
 - `07_Instance_Inventory/` - EC2 instance inventory.
 - `README.md` - Main project documentation.
 
